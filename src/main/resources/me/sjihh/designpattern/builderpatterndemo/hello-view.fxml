@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="512.0" prefWidth="512.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.sjihh.designpattern.builderpatterndemo.SpriteAnimationController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="445.0" prefWidth="458.0">
+         <children>
+            <Pane prefHeight="428.0" prefWidth="325.0">
+               <children>
+                  <ImageView fx:id="animationView" fitHeight="446.0" fitWidth="299.0" layoutX="-1.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <VBox alignment="TOP_CENTER" prefHeight="428.0" prefWidth="201.0">
+               <children>
+                  <Pane prefHeight="209.0" prefWidth="167.0">
+                     <children>
+                        <ImageView fx:id="quickView" fitHeight="210.0" fitWidth="174.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button id="robotA" fx:id="robotA" mnemonicParsing="false" onAction="#onRobotAButtonClick" text="Robot A" />
+                        <Button id="robotB" fx:id="robotB" mnemonicParsing="false" onAction="#onRobotBButtonClick" text="Robot B" />
+                     </children>
+                  </HBox>
+                  <Button id="build" fx:id="build" mnemonicParsing="false" onAction="#onRobotBuildButtonClick" text="Build" />
+                  <Pane prefHeight="61.0" prefWidth="167.0">
+                     <children>
+                        <Label id="processLabel" fx:id="processLabel"  layoutX="70.0" layoutY="22.0" text="" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
