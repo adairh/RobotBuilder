@@ -77,12 +77,12 @@ public class SpriteAnimationController {
     }
 
     public void runAnimation(String path) {
-        if (spriteAnimation != null) {
-            spriteAnimation.stop();
-        }
         runAnimation(path, Animation.INDEFINITE);
     }
     public void runAnimation(String path, int loop) {
+        if (spriteAnimation != null) {
+            spriteAnimation.stop();
+        }
         int numFrames = 24; // Replace with the actual number of frames
         Image[] frames = new Image[numFrames];
 
