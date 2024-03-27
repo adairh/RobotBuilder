@@ -24,6 +24,9 @@ public class OctBuilder extends RobotBuilder implements IBuilder {
         LeftArm leftArm = new LeftArm(laPath);
         RightArm rightArm = new RightArm(raPath);
         Robot robot = new Robot(head, body, leftLeg, rightLeg, leftArm, rightArm);
+
+        //do something with robot later here
+
         init(quickView, llPath,rlPath, laPath, raPath, chestPath, headPath, buildDone, fn);
         doTask();
     }
